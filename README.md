@@ -35,17 +35,40 @@ python main.py "https://volby.gov.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnu
 
 ## Ukázka projektu
 
-### Průběh programu
+Výsledky hlasování pro okres Benešov:
+
+**1. argument:**
+
+```text
+https://volby.gov.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101
+```
+
+**2. argument:**
+
+```text
+vysledky_benesov.csv
+```
+
+**Spuštění programu:**
+
+```bash
+python main.py "https://volby.gov.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2101" vysledky_benesov.csv
+```
+
+**Průběh stahování:**
 
 ```text
 Stahuji obec: Benešov
 Stahuji obec: Bernartice
+Stahuji obec: Bílkovice
 ...
+Stahuji obec: Zvěstov
+
 Hotovo.
 Výsledky byly uloženy do: vysledky_benesov.csv
 ```
 
-### Částečný výstup
+**Částečný výstup:**
 
 ```text
 code,location,registered,envelopes,valid,...
